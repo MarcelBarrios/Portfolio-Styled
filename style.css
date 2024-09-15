@@ -1,0 +1,146 @@
+/* Adding the primary font Arvo from Google fonts and the secundary font serif */
+h1, h2, h3  {
+    font-family: 'Arvo', serif;
+}
+
+/* Making font size bigger and centered */
+h1 {
+    margin-top: 3%;
+    font-size: 300%;
+    text-align: center;
+}
+
+/* Making h2 smaller than h1 */
+h2 {
+    font-size: 200%;
+}
+
+/* Making h3 smaller than h2 */
+h3 {
+    font-size: 150%;
+}
+
+/* Adding the primary font Lato from Google fonts and the secundary font sans-serif.
+Adding a font color and a background color. */
+body  {
+    font-family: 'Lato', sans-serif;
+    color: RGB(3, 5, 4);
+    background-color: RGB(151, 235, 212);
+}
+
+/* Adding a background color and making font size bigger. */
+p, ul, figcaption {
+    background-color: RGB(238, 238, 238);
+    font-size: 120%;
+}
+
+/* Adding background color, a solid border with another color.*/
+nav ul {
+    background-color: RGB(238, 238, 238);
+    border: 5px solid;
+    border-color: RGB(176, 201, 191);
+}
+
+/* Adding a background color, and removing the border. */
+blockquote p, div p, figcaption{
+    background-color: RGB(151, 235, 212);
+    border: 0;
+}
+
+/* Making font bold. */
+cite, nav {
+    font-weight: bold;
+}
+
+/* Making the space between the lines bigger. Adding padding.*/
+nav {
+    line-height: 200%;
+    padding: 1%;
+}
+
+/* Increasing the space between the lines. Increasing margin and padding. Adding a 
+border. */
+p {
+    line-height: 150%;
+    margin: 1%;
+    padding: 1%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: RGB(176, 201, 191);
+}
+
+/* Adding the property display to make the  li elements horizontaly aligned. Adding
+left and right padding. Centering the li elements, and making bullet points dissapear.*/
+nav ul {
+    display: flex;
+    justify-content: space-around; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: RGB(238, 238, 238); 
+    border: 5px solid RGB(176, 201, 191);
+}
+
+/*Giving li elements responsivness, and adding padding. */
+li {
+    padding: 0;
+    justify-content: flex-start;
+}
+
+/*Adding padding, and margin.*/
+#f1-career ul {
+    list-style: none;
+    padding: 2%;
+    margin: 1%;
+    border: 5px solid;
+    border-color: RGB(176, 201, 191);
+}
+
+/* adding the ferrari logo to each li. */
+#f1-career ul li {
+    background-image: url('https://icon2.cleanpng.com/20180406/iqq/avbtys670.webp'); 
+    background-size: 30px 30px; 
+    background-repeat: no-repeat;
+    padding-left: 30px; 
+    margin-bottom: 10px; 
+}
+
+/* making the image bigger */
+img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* centering the images */
+figure {
+    text-align: center;
+}
+
+/* centering address */
+address {
+    text-align: center;
+}
+
+/* making a flex container in the div's with class p-and-figure, and adding space betwee, and putting it
+in the center vertically. Giving a gap between the p and img */
+.p-and-figure {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px;}
+
+/* making the images inside the div's with the class p-and-figure bigger */
+.p-and-figure img {
+    width: 70%; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* giving p half the with so img size increase and adding style to p inside of the p-and-figure class div's */
+.p-and-figure p {
+    width: 50%;
+    background-color: RGB(238, 238, 238);
+    border: 5px solid;
+    border-color: RGB(176, 201, 191);
+}
